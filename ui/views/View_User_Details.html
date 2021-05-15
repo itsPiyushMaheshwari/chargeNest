@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Sidebar 01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="/css/custom.css" rel="stylesheet">
+    <style>
+  .btn {
+  border: 2px solid grey;
+  color: black;
+  padding: 2px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background:transparent; 
+}
+</style>
+</head>
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-4 pt-5">
+                <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.png);"></a>
+                <ul class="list-unstyled components mb-5">
+                    <li class="active">
+
+                        <a href="Add_Battery">Add New Battery</a>
+
+                        <a href="View_Battery_Details">View Battery Details</a>
+
+                        <a href="Add_New_Station">Add New Station</a>
+
+                        <a href="View_Station_Details">View Station Details</a>
+
+                        <a href="Add_New_User">Add New User</a>
+
+                        <a href="View_User_Details">View User Details</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <h1><b><i>&nbsp;&nbsp;Battery Manufacturer</i></b></h1>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="/">Logout</a>
+                </li>
+              </ul>
+            </div>
+                </div>
+            </nav>
+
+            <h2 class="mb-4">View User Details</h2>
+
+            <div class="inner">
+                <div class="image-holder">
+                    <img src="images/battery.png" alt="">
+                </div>
+                <form action="/View_User" method="POST">
+
+                    <div class="form-group">
+                        <input type="text" name="useId" placeholder="User Id" class="form-control"><button class="btn btn-success">GET
+                    </button>
+                    </div>
+                    
+                </form><br>
+              
+            </div>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/popper.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/main.js"></script>
+</body>
+
+</html>

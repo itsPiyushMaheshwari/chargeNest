@@ -1,0 +1,317 @@
+.overview {
+    padding-top: 40px;
+  }
+  
+  .overview-2 {
+    padding-top: 100px;
+  }
+  
+  .template-card {
+    background-color: #fff;
+    width: 610px;
+    height: 626px;
+    border: 1px #e5e5e5 solid;
+  }
+  
+  .template-card img {
+  
+    width: 500px;
+    height: 400px;
+    margin-left:30px;
+    border: 1px #e5e5e5 solid;
+  }
+  
+  .name {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .name h2 {
+    font-weight: normal;
+  }
+  
+  .about-card {
+    background-color: #fff;
+    width: 610px;
+    height: 200px;
+    border: 1px #e5e5e5 solid;
+  }
+  
+  .about-card h4 {
+    font-weight: normal;
+  }
+  
+  .order-card {
+    background-color: #fff;
+    width: 358px;
+    height: 287px;
+    border: 1px #e5e5e5 solid;
+  
+  }
+  
+  
+  .order-card .space-left {
+    margin-left: 15px;
+  }
+  
+  .profile-card {
+    background-color: #fff;
+    width: 600px;
+    height: 400px;
+    border: 1px #e5e5e5 solid;
+  }
+  
+  .profile-card .img-circle {
+  
+    display: table;
+    margin: 0 auto;
+    width: 100px;
+  
+  }
+  
+  .profile-card .img-circle {
+  
+    margin-top: 10px;
+  
+  }
+  
+  .profile-card p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .single-package-profile-card {
+    background-color: #fff;
+    width: 358px;
+    height: 200px;
+    border: 1px #e5e5e5 solid;
+  }
+  
+  .single-package-profile-card .img-circle {
+    margin-left: 140px;
+    margin-top: 20px;
+    width: 70px;
+  
+  }
+  
+  .single-package-profile-card p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .add-gig-card {
+    background-color: #fff;
+    width: 100%;
+    height: 150px;
+    border: 1px #e5e5e5 solid;
+  }
+  
+  .new-gig-card {
+    background-color: #fff;
+    width: 600px;
+    height: 500px;
+    border: 1px #e5e5e5 solid;
+  }
+  
+  .new-gig-card form {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  
+  .list-orders-card {
+    background-color: #fff;
+    width: 100%;
+    height: 600px;
+    border: 1px #e5e5e5 solid;
+  }
+  
+  
+  .my-gigs-card {
+    background-color: #fff;
+    width: 600px;
+    height: 600px;
+    border: 1px #e5e5e5 solid;
+  }
+  
+  .order-image-my-gig {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Margin stuff */
+  .table-margin {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .single-order-package-card {
+    background-color: #fff;
+    width: 500px;
+    height: 700px;
+    border: 1px #e5e5e5 solid;
+  }
+  
+  .space-between h4, h3 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box
+  }
+  
+  .single-order-package-card .inner img {
+    width: 150px;
+    height: 150px;
+    display: table;
+    margin: 0 auto;
+  }
+  
+  .single-order-package-card .promocode {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  
+  .single-order-package-card .proceed-btn {
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 350px
+  }
+  
+  .margin-both {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .dollar {
+    color: green;
+  }
+
+  body {
+	background-color: #f7f7f7;
+}
+
+.space-top {
+  padding: 40px 15px;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+
+.btn-success, .btn-success:active,  .btn.active, .btn-success:focus, .btn-success:hover {
+		background-color: #00b22d;
+    background: linear-gradient(#35c350, #03b525);
+    transition: color 0.2s, background-color 0.2s, box-shadow 0.2s, border 0.2s;
+    border-radius: 3px;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    color: #fff !important;
+    border: 1px solid #00b22d;
+}
+
+.btn-primary {
+	font-size: 16px;
+	font-weight: 700;
+	padding: 15px 35px;
+	margin: 0;
+	display: inline-block;
+}
+
+label {
+	font-size: 17px;
+	font-weight: 500;
+	color: #333;
+	text-transform: uppercase;
+}
+
+select {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	padding: 10px;
+	width: 100px;
+	/* appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none; */
+}
+
+.select-control {
+	font-size: 16px;
+	position: relative;
+	display: block;
+}
+
+.select-control:before {
+	content: '\25bc';
+	font-size: 16px;
+	top: 10px;
+	left: 60px;
+	position: absolute;
+	color: #ccc;
+	transform: scale(0.84, 0.42);
+	pointer-events:none;
+}
+
+.hero {
+	background: url('/img/start.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 500px;
+	text-align: center;
+}
+
+.hero-heading {
+	color: #111;
+	margin-top: 100px;
+	font-size: 37px;
+	font-weight: 600;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.hero-heading p {
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.section h1 {
+	margin: 40px 0px;
+	text-align: center;
+}
+
+.gig-card {
+	background-color: #fff;
+	width: 228px;
+	height: 260px;
+	border: 1px #e5e5e5 solid;
+	margin: 0 auto 40px auto;
+	padding: 0;
+}
+
+.gig-card img {
+	width: 226px;
+	height: 139px;
+}
+
+.gig-card h4 {
+	padding: 10px;
+	font-weight: 400;
+}
+
+.gig-card h3 {
+	color: #00b22d;
+	padding: 0px 10px;
+	font-size: 19px;
+}
+
+.gig-card .text-linking {
+	color: #333333;
+	text-decoration: none;
+}
+
+.gig-card .text-linking:hover {
+	color: green;
+	text-decoration: underline;
+}

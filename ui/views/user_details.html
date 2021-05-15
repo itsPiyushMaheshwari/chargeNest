@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Sidebar 01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="/css/custom.css" rel="stylesheet">
+    <style>
+table {
+color:black;
+  font-weight: normal;
+  font-family: arial;
+  border-collapse: collapse;
+  font-size: 20px;
+  width: 100%;
+ 
+}
+
+td, th {
+  
+  text-align: left;
+  padding: 10px;
+ 
+}
+
+
+</style>
+</head>
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-4 pt-5">
+                <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.png);"></a>
+                <ul class="list-unstyled components mb-5">
+                    <li class="active">
+
+                        <a href="Add_Battery">Add New Battery</a>
+
+                        <a href="View_Battery_Details">View Battery Details</a>
+
+                        <a href="Add_New_Station">Add New Station</a>
+
+                        <a href="View_Station_Details">View Station Details</a>
+
+                        <a href="Add_New_User">Add New User</a>
+
+                        <a href="View_User_Details">View User Details</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <h1><b><i>&nbsp;&nbsp;Battery Manufacturer</i></b></h1>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="/">Logout</a>
+                </li>
+              </ul>
+            </div>
+                </div>
+            </nav>
+<br>
+            <h2 class="mb-4">User Details</h2>
+
+            <div class="inner">
+                <div class="image-holder">
+                    <img src="images/battery.png" alt="">
+                </div>
+                <form action="/View_User" method="POST">
+                <% if(locals.name) {%>      
+                    <table>
+  <tr>
+    <td><b> Name</b> </td>
+    <td>-</td>
+    <td> <%= name %> </td>
+  </tr>              
+                <%}%>
+				<% if(locals.subscriptiondetails) {%>
+              
+  <tr>
+                         <td><b>Subscription Details</b></td>
+                          <td>-</td>
+                      <td>  <%= subscriptiondetails %></td></tr>
+                    
+                <%}%>
+				<% if(locals.subscriptionstatus) {%>
+               
+  <tr>
+                      <td><b> Subscription Status</b> </td>
+                       <td>-</td>
+                      <td>  <%= subscriptionstatus %></td></tr>
+                  
+				<%}%>
+				<% if(locals.currentbattery) {%>
+					
+  <tr>
+  <td><b>Current Battery</b> </td>
+   <td>-</td>
+							<td><%= currentbattery %></td></tr>
+						
+					<%}%>
+				</table>	 <h4><a class="button" href="Add_New_User">Go Back</a></h4>
+					 </form>
+            </div>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/popper.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/main.js"></script>
+</body>
+
+</html>

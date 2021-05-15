@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Sidebar 01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 pt-5">
+		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.png);"></a>
+	        <ul class="list-unstyled components mb-5">
+	         <li class="active">
+                    <a href="Add_New_Station.html">Add New Station</a>
+             
+                    <a href="User_Authentication.html">User Authentication</a>
+                
+                    <a href="Swap_Station_Inventory.html">Swap Station Inventory</a>
+               
+                    <a href="Update_Swap_Station_Details.html">Update Swap Station Details</a>
+              
+                    <a href="Generate_Bill.html">Generate Bill</a>
+              
+                    <a href="Pay_Bill.html">Pay Bill</a>
+               
+                    <a href="Update_User_Details.html">Update User Details</a>
+                
+                    <a href="Update_Battery_Details.html">Update Battery Details</a>
+                </li>
+	        </ul>
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"><h1><b><i>&nbsp;&nbsp;Swapping Station</i></b></h1>
+              <ul class="nav navbar-nav ml-auto">
+               
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <h2 class="mb-4">Add New Station</h2>
+        
+			<div class="inner">
+				<div class="image-holder">
+					<img src="images/battery.png" alt="">
+				</div>
+				<form action="">
+					
+					<div class="form-group">
+						<input type="text" placeholder="Manufacturer Id" class="form-control">
+						<div >
+						<select name="" id="" class="form-control">
+							<option value="" disabled selected>Battery Type</option>
+							<option value="Lithium-ion">Lithium-ion</option>
+							<option value="Nickel-metal Hydride">Nickel-metal Hydride</option>
+							<option value="Lead-Acid">Lead-Acid</option>
+							<option value="Ultracapacitors">Ultracapacitors</option>
+						</select>
+						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+					</div>
+					</div>
+					<div class="form-group">
+						<input type="text" placeholder="Status" class="form-control">
+						<input type="text" placeholder="Max no of cycles" class="form-control">
+					</div><div class="form-group">
+						<input type="text" placeholder="Manufactured date" class="form-control">
+						<input type="text" placeholder="Expired date" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="text" placeholder="Charge limit" class="form-control">
+						<input type="text" placeholder="Discharge limit" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="text" placeholder="Security Certification" class="form-control">
+						<input type="text" placeholder="current user/station" class="form-control">
+					</div>
+					<button class="button">ADD
+					</button>
+				</form>
+			</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
